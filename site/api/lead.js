@@ -94,7 +94,7 @@ export default async function handler(req, res) {
   ];
 
   try {
-    const textMessage = lines.join("\\n");
+    const textMessage = lines.join("\n");
     const destinations = [personalChatId, groupChatId];
     const deliveries = await Promise.all(destinations.map(async (chatId) => {
       const telegramResponse = await fetch("https://api.telegram.org/bot" + botToken + "/sendMessage", {
