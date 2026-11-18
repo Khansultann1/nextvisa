@@ -25,7 +25,7 @@ The public static website is assembled in the `site/` publish directory:
 - [SEO content tracker](SEO-CONTENT-TRACKER.md)
 
 ## Deployment status
-- [x] Static homepage source added to repository root
+- [x] Public homepage source assembled under `site/index.html`
 - [x] Five destination information pages created
 - [x] Netlify Forms enquiry form markup added
 - [x] Privacy, terms, thank-you and 404 pages added
