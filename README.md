@@ -26,9 +26,10 @@ The homepage form sends JSON to `/api/lead`. The API sends a plain-text enquiry 
 Configure these **Production** environment variables in Vercel Project Settings → Environment Variables:
 
 - `TELEGRAM_BOT_TOKEN` — the bot token from BotFather
-- `TELEGRAM_CHAT_ID` — the manager chat or group ID where enquiries should arrive
+- `TELEGRAM_CHAT_ID_PERSONAL` — your personal Telegram chat ID
+- `TELEGRAM_CHAT_ID_GROUP` — the manager group chat ID where enquiries should arrive
 
-Do not commit these values to GitHub or paste the bot token into public chat. Until both variables are configured, `GET /api/lead` returns `{ "enabled": false }`, the homepage submit button stays disabled, and the form displays a setup notice. Redeploy after adding the variables, then test with a non-sensitive test enquiry.
+Do not commit these values to GitHub or paste the bot token into public chat. Until all three variables are configured, `GET /api/lead` returns `{ "enabled": false }`, the homepage submit button stays disabled, and the form displays a setup notice. Redeploy after adding the variables, then test with a non-sensitive test enquiry.
 
 The backend validates the required fields and consent checkbox, includes a honeypot and a basic per-instance rate limit, and sends only the initial enquiry fields. It does not request passport scans or banking records.
 
