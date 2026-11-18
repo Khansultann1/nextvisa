@@ -1,0 +1,31 @@
+# NextVisa
+
+> NextVisa is a Kazakhstan-based visa support and travel-planning brand. It helps travelers understand visa processes, organize application materials, and plan international trips. It does not make visa decisions and does not guarantee approvals.
+
+## Main website
+- https://nextvis.netlify.app/
+
+## Consultation
+- https://nextvis.netlify.app/#lead-form
+
+## Destination information
+- Schengen: https://nextvis.netlify.app/visa/schengen.html
+- United States: https://nextvis.netlify.app/visa/usa.html
+- United Kingdom: https://nextvis.netlify.app/visa/uk.html
+- Canada: https://nextvis.netlify.app/visa/canada.html
+- Australia: https://nextvis.netlify.app/visa/australia.html
+
+## Services
+- Initial visa and travel consultation
+- Preparation roadmap and document organization
+- Document consistency review
+- Support within an agreed scope of services
+
+## Important limitations
+- Visa requirements, eligibility, fees, processing times, appointment availability and document lists change. Confirm them with the relevant official government or consular authority.
+- Visa decisions are made solely by competent authorities. NextVisa does not guarantee an outcome.
+- Government and consular fees are separate from any agency service fee.
+- Do not send passport scans, financial records or sensitive personal documents through the initial enquiry form.
+
+## Official sources
+Each destination page links to the relevant official government source (European Commission, U.S. Department of State, GOV.UK, IRCC, or Australian Department of Home Affairs).
