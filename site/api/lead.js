@@ -12,8 +12,9 @@ function clean(value, maxLength) {
 
 export default async function handler(req, res) {
   const botToken = process.env.TELEGRAM_BOT_TOKEN;
-  const chatId = process.env.TELEGRAM_CHAT_ID;
-  const configured = Boolean(botToken && chatId);
+  const personalChatId = process.env.TELEGRAM_CHAT_ID_PERSONAL;
+  const groupChatId = process.env.TELEGRAM_CHAT_ID_GROUP;
+  const configured = Boolean(botToken && personalChatId && groupChatId);
 
   if (req.method === "GET") {
     return send(res, 200, { enabled: configured });
@@ -93,14 +94,18 @@ export default async function handler(req, res) {
   ];
 
   try {
-    const telegramResponse = await fetch("https://api.telegram.org/bot" + botToken + "/sendMessage", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ chat_id: chatId, text: lines.join("\n"), disable_web_page_preview: true })
-    });
-
-    const telegramResult = await telegramResponse.json().catch(() => ({}));
-    if (!telegramResponse.ok || telegramResult.ok !== true) {
+    const textMessage = lines.join("\\n");
+    const destinations = [personalChatId, groupChatId];
+    const deliveries = await Promise.all(destinations.map(async (chatId) => {
+      const telegramResponse = await fetch("https://api.telegram.org/bot" + botToken + "/sendMessage", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ chat_id: chatId, text: textMessage, disable_web_page_preview: true })
+      });
+      const telegramResult = await telegramResponse.json().catch(() => ({}));
+      return telegramResponse.ok && telegramResult.ok === true;
+    }));
+    if (deliveries.some(ok => !ok)) {
       return send(res, 502, { ok: false, code: "DELIVERY_FAILED" });
     }
   } catch {
