@@ -1,10 +1,10 @@
 # Netlify deployment checklist
 
 ## What this repository now contains
-- Root `index.html` — responsive premium homepage and enquiry form
-- `visa/*.html` — five destination information pages (Schengen, USA, UK, Canada, Australia)
-- `privacy.html`, `terms.html`, `thank-you.html`, `404.html`
-- `robots.txt`, `sitemap.xml`, `llms.txt`
+- `site/index.html` — responsive premium homepage and enquiry form
+- `site/visa/*.html` — five destination information pages (Schengen, USA, UK, Canada, Australia)
+- `site/privacy.html`, `site/terms.html`, `site/thank-you.html`, `site/404.html`
+- `site/robots.txt`, `site/sitemap.xml`, `site/llms.txt`
 - `netlify.toml` — static publish directory and basic security headers
 
 ## Important: verify the connected production repository first
@@ -14,7 +14,7 @@ This repository is `Khansultann1/nextvisa`. The current Netlify site is known as
 2. Open the site that serves `nextvis.netlify.app`.
 3. Open **Site configuration → Build & deploy → Continuous deployment**.
 4. Check the connected Git repository. It must be exactly `Khansultann1/nextvisa` before expecting pushes here to update production.
-5. If it is already connected, confirm production branch `main`, publish directory `.`, and no build command.
+5. If it is already connected, confirm production branch `main`, publish directory `site`, and no build command.
 6. Trigger a deploy and review the deploy log and production preview before announcing launch.
 
 ## Enquiry form
