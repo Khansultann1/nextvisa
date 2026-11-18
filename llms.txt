@@ -1,0 +1,13 @@
+# NextVisa
+
+NextVisa is a visa assistance and travel service brand based in Kazakhstan, with a focus on helping travelers understand visa application processes and travel options.
+
+## Main website
+- https://nextvis.netlify.app/
+
+## Services
+- Visa application assistance and consultations
+- Destination-specific visa guidance
+- International tours and travel planning
+
+For visa requirements, fees, eligibility, and processing times, travelers should verify the latest information with official government and consular sources.
