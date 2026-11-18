@@ -3,11 +3,11 @@
 Premium visa-support and travel-planning brand project.
 
 ## Website source (static / Netlify)
-The root of this repository now contains a deployable static website:
-- `index.html` — premium homepage and Netlify enquiry form
-- `visa/` — five destination pages (Schengen, USA, UK, Canada, Australia)
-- `privacy.html`, `terms.html`, `thank-you.html`, `404.html`
-- `netlify.toml`, `robots.txt`, `sitemap.xml`, `llms.txt`
+The public static website is assembled in the `site/` publish directory:
+- `site/index.html` — premium homepage and Netlify enquiry form
+- `site/visa/` — five destination pages (Schengen, USA, UK, Canada, Australia)
+- `site/privacy.html`, `site/terms.html`, `site/thank-you.html`, `site/404.html`
+- root `netlify.toml` publishes only `site/`; SEO files are inside `site/`
 
 ## Brand direction
 - Positioning: premium, clear, professional, international
@@ -29,7 +29,7 @@ The root of this repository now contains a deployable static website:
 - [x] Five destination information pages created
 - [x] Netlify Forms enquiry form markup added
 - [x] Privacy, terms, thank-you and 404 pages added
-- [x] robots.txt, sitemap.xml, llms.txt and netlify.toml added
+- [x] `site/robots.txt`, `site/sitemap.xml`, `site/llms.txt` and root `netlify.toml` added
 - [ ] Confirm that the production Netlify site is connected to this exact repository
 - [ ] Deploy and test the live site and form
 - [ ] Configure a real business email notification
