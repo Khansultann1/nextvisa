@@ -3,17 +3,17 @@
 > NextVisa is a Kazakhstan-based visa support and travel-planning brand. It helps travelers understand visa processes, organize application materials, and plan international trips. It does not make visa decisions and does not guarantee approvals.
 
 ## Main website
-- https://nextvis.netlify.app/
+- https://nextvisa.vercel.app/
 
 ## Consultation
-- https://nextvis.netlify.app/#lead-form
+- https://nextvisa.vercel.app/#lead-form
 
 ## Destination information
-- Schengen: https://nextvis.netlify.app/visa/schengen.html
-- United States: https://nextvis.netlify.app/visa/usa.html
-- United Kingdom: https://nextvis.netlify.app/visa/uk.html
-- Canada: https://nextvis.netlify.app/visa/canada.html
-- Australia: https://nextvis.netlify.app/visa/australia.html
+- Schengen: https://nextvisa.vercel.app/visa/schengen.html
+- United States: https://nextvisa.vercel.app/visa/usa.html
+- United Kingdom: https://nextvisa.vercel.app/visa/uk.html
+- Canada: https://nextvisa.vercel.app/visa/canada.html
+- Australia: https://nextvisa.vercel.app/visa/australia.html
 
 ## Services
 - Initial visa and travel consultation
