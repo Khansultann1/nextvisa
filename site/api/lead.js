@@ -60,7 +60,8 @@ export default async function handler(req, res) {
   const destination = clean(body.destination, 60);
   const travelPeriod = clean(body.travel_period, 50);
   const message = clean(body.message, 800);
-  const consent = body.consent === "on" || body.consent === "true" || body.consent === true || body.consent === "1";
+  const consentValue = body.privacy_consent ?? body.consent;
+  const consent = consentValue === "on" || consentValue === "yes" || consentValue === "true" || consentValue === true || consentValue === "1";
 
   if (!name || name.length < 2 || !contact || contact.length < 5 || !destination || !consent) {
     return send(res, 400, { ok: false, code: "INVALID_INPUT" });
