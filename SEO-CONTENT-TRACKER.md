@@ -1,38 +1,40 @@
 # NextVisa SEO/GEO Content Tracker
 
-This tracker records content readiness. Drafts are NOT publication-ready until current official facts, fees, eligibility, and country-specific instructions are checked.
+Last implementation update: 18 November 2026.
 
-| Topic | Draft file | Status | Fact-check | Landing page | CTA |
+| Topic | Public page source | Content status | Official-source review | Publish status |
 |---|---|---|---|---|
-| Canada visitor visa | content/visa-canada-visitor-guide.md | Draft | Pending official IRCC review | Not built | Consultation form/WhatsApp |
-| UK Standard Visitor | content/visa-uk-visitor-guide.md | Draft | Not built | Consultation form/WhatsApp |
-| Australia Visitor 600 | content/visa-australia-visitor-guide.md | Draft | Not built | Consultation form/WhatsApp |
-| Schengen short stay | content/visa-schengen-guide.md | Draft | Not built | Consultation form/WhatsApp |
-| USA visitor visa | content/visa-usa-visitor-guide.md | Draft | Not built | Consultation form/WhatsApp |
+| Homepage | index.html | Built; Russian copy | Business/legal details pending | Deploy pending |
+| Schengen | visa/schengen.html | Built; Kazakh guide | European Commission source linked; destination-country consular checks pending | Editorial review pending |
+| USA visitor | visa/usa.html | Built; Kazakh guide | U.S. Department of State source linked; local instructions pending | Editorial review pending |
+| UK Standard Visitor | visa/uk.html | Built; Kazakh guide | GOV.UK source linked; applicant-specific checks pending | Editorial review pending |
+| Canada Visitor Visa | visa/canada.html | Built; Kazakh guide | IRCC source linked; individual checklist checks pending | Editorial review pending |
+| Australia Visitor | visa/australia.html | Built; Kazakh guide | Department of Home Affairs source linked; correct stream must be confirmed | Editorial review pending |
 
-## Quality gate before publishing
-- [ ] Official sources reviewed and linked
-- [ ] Kazakhstan applicant specifics confirmed
-- [ ] Fees and processing statements checked on date of review
-- [ ] No guarantees or misleading claims
-- [ ] Unique page title, meta description, canonical URL
-- [ ] Helpful FAQs based on real questions
-- [ ] Clear CTA, contact details, consent/privacy notice
-- [ ] Internal links to relevant services and guides
-- [ ] Mobile readability and accessibility checked
-- [ ] Reviewed date and responsible reviewer recorded
+## Technical foundation
+- [x] Root homepage with title, meta description, canonical, Open Graph and basic Organization JSON-LD
+- [x] Responsive premium layout and static enquiry form markup
+- [x] Netlify Forms name, spam honeypot, required consent field and thank-you redirect
+- [x] Five destination pages with links to official government sources
+- [x] Privacy and service-terms templates (not legal-final)
+- [x] robots.txt and sitemap.xml
+- [x] llms.txt and netlify.toml
+- [ ] Verify Netlify production site is connected to this exact GitHub repository
+- [ ] Deploy and test live routes, mobile layout and form capture
+- [ ] Configure verified business email notification in Netlify Forms
+- [ ] Complete data operator details and legal review
+- [ ] Confirm real business services, prices, contact channels and company credentials
+- [ ] Fact-check country-specific applicant instructions and record review dates
+- [ ] Configure Search Console, Bing Webmaster and analytics
 
-## Weekly KPI review
-- Search impressions, clicks, CTR, average position
-- Indexed URLs and indexing errors
-- Visits to visa pages
-- Clicks to WhatsApp/Telegram and form submissions
-- Qualified leads, booked consultations, paid clients
-- Conversion rate by landing page and source
+## Quality gate before publishing destination guidance
+- [ ] Verify destination route for the applicant's nationality and travel purpose
+- [ ] Check consular jurisdiction, local process, appointment rules and biometrics
+- [ ] Recheck current government fees on the publication date
+- [ ] Recheck processing guidance and describe it as non-guaranteed
+- [ ] Use the official portal checklist for the individual application
+- [ ] Add reviewer and last-reviewed date
+- [ ] Never guarantee approval or fabricate evidence/testimonials
 
-## Priority order
-1. Identify actual production source repository and publishing workflow
-2. Confirm website pages, tracking, and contact CTA
-3. Publish destination landing pages after fact-check
-4. Create FAQ and supporting blog cluster
-5. Add Search Console/Bing Webmaster and measure conversions
+## Measurement
+Track indexed URLs, search impressions/clicks/CTR, destination-page visits, CTA clicks, form starts/submissions, qualified leads, consultations, paid clients and conversion by channel. Do not send names, phone numbers or other personal data to analytics.
