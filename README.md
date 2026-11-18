@@ -1,48 +1,50 @@
 # NextVisa — Visa & Travel Services
 
-NextVisa is being developed as a premium, trust-first visa support and travel brand. This repository currently contains strategy, content drafts, SEO foundations, and a homepage design concept—not the verified production website source.
+Premium visa-support and travel-planning brand project.
+
+## Website source (static / Netlify)
+The root of this repository now contains a deployable static website:
+- `index.html` — premium homepage and Netlify enquiry form
+- `visa/` — five destination pages (Schengen, USA, UK, Canada, Australia)
+- `privacy.html`, `terms.html`, `thank-you.html`, `404.html`
+- `netlify.toml`, `robots.txt`, `sitemap.xml`, `llms.txt`
 
 ## Brand direction
-- **Positioning:** Premium, clear, professional, international
-- **Visual system:** Midnight navy `#101B2D`, champagne gold `#D6B46A`, warm ivory `#F5F3EE`
-- **Voice:** Helpful, precise, calm; never promise visa approval
-- **Primary conversion:** Qualified visa consultation
+- Positioning: premium, clear, professional, international
+- Visual system: Midnight Navy `#101B2D`, Champagne Gold `#D6B46A`, Warm Ivory `#F5F3EE`
+- Voice: helpful, precise and calm; never promise visa approval
+- Primary conversion: qualified consultation enquiry
 
-## Current repository deliverables
-- [Premium homepage concept (HTML/CSS)](design/premium-homepage-concept.html)
+## Planning and growth material
+- [Brand and UX copy guide](BRAND-UX-COPY-GUIDE.md)
+- [Lead funnel implementation spec](LEAD-FUNNEL-IMPLEMENTATION-SPEC.md)
 - [SEO/GEO roadmap](SEO-GEO-ROADMAP.md)
 - [SEO keyword map](SEO-KEYWORD-MAP.md)
-- [Content tracker](SEO-CONTENT-TRACKER.md)
 - [Conversion playbook](NEXTVISA-CONVERSION-PLAYBOOK.md)
 - [30-day growth sprint](NEXTVISA-30-DAY-GROWTH-SPRINT.md)
-- [Canada visitor guide draft](content/visa-canada-visitor-guide.md)
-- [UK visitor guide draft](content/visa-uk-visitor-guide.md)
-- [Australia visitor guide draft](content/visa-australia-visitor-guide.md)
-- [Schengen guide draft](content/visa-schengen-guide.md)
-- [USA visitor guide draft](content/visa-usa-visitor-guide.md)
+- [SEO content tracker](SEO-CONTENT-TRACKER.md)
 
-## Status
-- [x] Brand and premium visual direction drafted
-- [x] Homepage design concept created
-- [x] SEO/GEO foundation documents created
-- [x] Five destination content drafts prepared
-- [x] Conversion flow and growth sprint outlined
-- [ ] Production repository identified and confirmed
-- [ ] Live site design implemented
-- [ ] Official visa content fact-checked and reviewed
-- [ ] Contact CTA and lead form connected and tested
-- [ ] CRM integration and consent/privacy flow reviewed
-- [ ] Search Console/Bing Webmaster setup verified
-- [ ] Analytics events and lead conversion tracking tested
-- [ ] Mobile, accessibility, performance and cross-browser QA
-- [ ] Launch review completed
+## Deployment status
+- [x] Static homepage source added to repository root
+- [x] Five destination information pages created
+- [x] Netlify Forms enquiry form markup added
+- [x] Privacy, terms, thank-you and 404 pages added
+- [x] robots.txt, sitemap.xml, llms.txt and netlify.toml added
+- [ ] Confirm that the production Netlify site is connected to this exact repository
+- [ ] Deploy and test the live site and form
+- [ ] Configure a real business email notification
+- [ ] Fill in and review legal operator details
+- [ ] Fact-check destination guidance and add review dates
+- [ ] Verify official contact channels, services and fees
+- [ ] Submit sitemap to search tools and configure analytics
 
 ## Safety and quality rules
-- Do not guarantee visa approval.
-- Government fees and agency service fees must be shown separately.
-- Visa requirements, checklists, processing times and eligibility must be checked against current official sources before publication.
-- Never publish fabricated testimonials, success rates, case studies, or staff credentials.
-- Collect only necessary personal data, with clear consent and privacy information.
+- Never guarantee visa approval.
+- Separate government/consular charges from agency service fees.
+- Verify visa requirements, fees, eligibility, processing times and document lists against official sources before relying on them.
+- Never publish fabricated testimonials, success rates, case studies or credentials.
+- Collect only necessary personal data and explain the purpose and storage before submission.
+- The homepage form is designed for an initial enquiry only; do not request passport scans or financial records through it.
 
-## Next critical dependency
-Identify the actual source repository and publishing workflow for the currently deployed site at `https://nextvis.netlify.app/`. Until verified, this repository's files must not be represented as live production changes.
+## Critical deployment dependency
+See [NETLIFY-DEPLOYMENT.md](NETLIFY-DEPLOYMENT.md). The live `nextvis.netlify.app` deployment has not yet been verified as connected to this repository; GitHub pushes alone do not prove that production was updated.
