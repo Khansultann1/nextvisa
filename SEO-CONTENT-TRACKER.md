@@ -4,12 +4,12 @@ Last implementation update: 18 November 2026.
 
 | Topic | Public page source | Content status | Official-source review | Publish status |
 |---|---|---|---|---|
-| Homepage | index.html | Built; Russian copy | Business/legal details pending | Deploy pending |
-| Schengen | visa/schengen.html | Built; Kazakh guide | European Commission source linked; destination-country consular checks pending | Editorial review pending |
-| USA visitor | visa/usa.html | Built; Kazakh guide | U.S. Department of State source linked; local instructions pending | Editorial review pending |
-| UK Standard Visitor | visa/uk.html | Built; Kazakh guide | GOV.UK source linked; applicant-specific checks pending | Editorial review pending |
-| Canada Visitor Visa | visa/canada.html | Built; Kazakh guide | IRCC source linked; individual checklist checks pending | Editorial review pending |
-| Australia Visitor | visa/australia.html | Built; Kazakh guide | Department of Home Affairs source linked; correct stream must be confirmed | Editorial review pending |
+| Homepage | site/index.html | Built; Russian copy | Business/legal details pending | Deploy pending |
+| Schengen | site/visa/schengen.html | Built; Kazakh guide | European Commission source linked; destination-country consular checks pending | Editorial review pending |
+| USA visitor | site/visa/usa.html | Built; Kazakh guide | U.S. Department of State source linked; local instructions pending | Editorial review pending |
+| UK Standard Visitor | site/visa/uk.html | Built; Kazakh guide | GOV.UK source linked; applicant-specific checks pending | Editorial review pending |
+| Canada Visitor Visa | site/visa/canada.html | Built; Kazakh guide | IRCC source linked; individual checklist checks pending | Editorial review pending |
+| Australia Visitor | site/visa/australia.html | Built; Kazakh guide | Department of Home Affairs source linked; correct stream must be confirmed | Editorial review pending |
 
 ## Technical foundation
 - [x] Root homepage with title, meta description, canonical, Open Graph and basic Organization JSON-LD
